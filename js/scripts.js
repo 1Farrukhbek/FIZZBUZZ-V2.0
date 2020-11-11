@@ -38,6 +38,9 @@ elItemForm.addEventListener('submit', function (evt) {
     elItemInput.classList.add('is-invalid');
     return;
   }
+
+  // Remove invalid class
+  elItemInput.classList.remove('is-invalid');
   
   // Loop for finding FizzBuzzes
   for (var i = 1; i <= inputResult; i++){
